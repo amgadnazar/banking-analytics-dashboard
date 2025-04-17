@@ -4,7 +4,6 @@ import { Sun, Moon } from "lucide-react";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
-
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -38,25 +37,28 @@ export default function App() {
   return (
     <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-white text-gray-900"}>
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <div className="flex justify-between items-center mb-10 flex-wrap">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-0">Amjad Salih</h1>
+        {/* 🔥 Responsive Header */}
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-10">
+          <h1 className="text-2xl sm:text-3xl font-bold">Amjad Salih</h1>
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full border"
+            className="p-2 rounded-full border self-start sm:self-auto"
           >
             {darkMode ? <Sun /> : <Moon />}
           </button>
         </div>
 
-        <div className="text-3xl sm:text-4xl font-bold text-blue-500">
-            Welcome to my page!
+        {/* 🔵 Welcome Message */}
+        <div className="text-2xl sm:text-4xl font-bold text-blue-500">
+          Welcome to my page!
         </div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h2 className="text-lg sm:text-xl font-semibold mb-4">
-              Turning data into decisions — one insight at a time.
+          <h2 className="text-base sm:text-xl font-semibold mb-4">
+            Turning data into decisions — one insight at a time.
           </h2>
-          
+
+          {/* 🧠 About Me */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">About Me</h3>
             <p>
@@ -64,6 +66,7 @@ export default function App() {
             </p>
           </section>
 
+          {/* 🧰 Skills */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">Skills</h3>
             <ul className="list-disc pl-5">
@@ -73,6 +76,7 @@ export default function App() {
             </ul>
           </section>
 
+          {/* 🎓 Certifications */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">Certifications</h3>
             <ul className="list-disc pl-5">
@@ -83,31 +87,29 @@ export default function App() {
             </ul>
           </section>
 
-
+          {/* 💼 Experience */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">Experience</h3>
             <ul className="list-disc pl-5">
               <li><strong>Bank of Khartoum</strong> – IT Department (2023–Present)</li>
               <li><strong>IEEEXtreme</strong> – Top 5 in Sudan (2023)</li>
             </ul>
-
           </section>
 
+          {/* 🎓 Education */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">Education</h3>
             <ul className="list-disc pl-5">
               <li>BSc in Computer Science – Sudan University of Science and Technology (Expected 2024)</li>
             </ul>
-            
           </section>
-          
+
+          {/* 💼 Projects Section */}
           <section className="mb-10">
-            <h3 className="text-lg font-semibold mb-2"></h3>
             <Projects />
-
           </section>
 
-
+          {/* 📍 Contact Info */}
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">Contact</h3>
             <p>Email: amgadnazar11@gmail.com</p>
@@ -115,10 +117,8 @@ export default function App() {
             <p>Location: Dubai, UAE</p>
           </section>
 
-          
-
-          {/* 📨 Contact Form (React-powered) */}
-          <form onSubmit={handleSubmit} className="space-y-4 mt-10">
+          {/* 📨 Contact Form */}
+          <form onSubmit={handleSubmit} className="space-y-4 mt-10 px-2 sm:px-0">
             <input
               type="email"
               name="email"
@@ -161,8 +161,10 @@ export default function App() {
               ✅ Message sent successfully!
             </p>
           )}
-          <Footer />
         </motion.div>
+
+        {/* 📎 Footer */}
+        <Footer />
       </div>
     </div>
   );
