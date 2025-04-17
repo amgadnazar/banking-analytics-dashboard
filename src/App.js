@@ -38,8 +38,8 @@ export default function App() {
   return (
     <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-white text-gray-900"}>
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <div className="flex justify-between items-center mb-10">
-          <h1 className="text-3xl font-bold">Amjad Salih</h1>
+        <div className="flex justify-between items-center mb-10 flex-wrap">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-0">Amjad Salih</h1>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full border"
@@ -48,11 +48,15 @@ export default function App() {
           </button>
         </div>
 
-        <div className="text-4xl font-bold text-blue-500">Welcome to my page!</div>
+        <div className="text-3xl sm:text-4xl font-bold text-blue-500">
+            Welcome to my page!
+        </div>
 
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h2 className="text-xl font-semibold mb-4">Turning data into decisions — one insight at a time.</h2>
-
+          <h2 className="text-lg sm:text-xl font-semibold mb-4">
+              Turning data into decisions — one insight at a time.
+          </h2>
+          
           <section className="mb-10">
             <h3 className="text-lg font-semibold mb-2">About Me</h3>
             <p>
