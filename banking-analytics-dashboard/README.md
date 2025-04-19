@@ -11,7 +11,7 @@ It analyzes customer transactions to reveal insights into processed amounts, tra
 - **Amount by Transaction Type** (Donut Chart)
 - **Filters**: Date, Transaction Type, Region
 
-![Dashboard Preview](images/dashboard-preview.png)
+![Dashboard Preview](dashboard-preview.png)
 
 ## 🔍 Tools Used
 
