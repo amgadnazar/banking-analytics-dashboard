@@ -88,6 +88,44 @@ export default function Projects() {
   </div>
 </motion.div>
 
+{/* 🏦 Project: Banking Analytics Dashboard (Power BI) */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.7 }}
+  viewport={{ once: true }}
+  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6"
+>
+  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+    🏦 Banking Analytics Dashboard (Power BI)
+  </h3>
+
+  {/* Dashboard Preview Image */}
+  <img
+    src="/images/banking-dashboard-preview.png"
+    alt="Banking Analytics Dashboard Preview"
+    className="w-full h-auto rounded mb-4 border dark:border-gray-700"
+  />
+
+  <p className="text-gray-700 dark:text-gray-300 mb-4">
+    A financial dashboard that analyzes customer transactions and revenue using Power BI.
+    It includes KPIs, year-over-year performance, top customers, and transaction breakdowns —
+    fully interactive and inspired by real banking processes.
+  </p>
+
+  <div className="flex flex-wrap gap-4">
+    <a
+      href="https://github.com/amgadnazar/amgadnazar.github.io"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-4 py-2 bg-gray-900 text-white font-semibold rounded hover:bg-gray-700 transition"
+    >
+      💻 View on GitHub
+    </a>
+  </div>
+</motion.div>
+
+
       </div>
       {/* 🔲 Grid wrapper ends here */}
     </section>

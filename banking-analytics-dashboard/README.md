@@ -1,17 +1,17 @@
 # Banking Analytics Dashboard – by Amjad Salih
 
-This project showcases a Banking Analytics Dashboard built with Power BI.  
+This project showcases a **Banking Analytics Dashboard** built with **Power BI**.  
 It analyzes customer transactions to reveal insights into processed amounts, transaction types, and trends over time.
 
 ## 📊 Dashboard Overview
 
-- Total Amount Processed (KPI Card)
-- Top 5 Customers by Processed Amount (Bar Chart)
-- Amount by Year (Line Chart)
-- Amount by Transaction Type (Donut Chart)
-- Filters Date, Transaction Type, Region
+- **Total Amount Processed** (KPI Card)
+- **Top 5 Customers** by Processed Amount (Bar Chart)
+- **Amount by Year** (Line Chart)
+- **Amount by Transaction Type** (Donut Chart)
+- **Filters**: Date, Transaction Type, Region
 
-![Dashboard Preview](imagesdashboard-preview.png)
+![Dashboard Preview](images/dashboard-preview.png)
 
 ## 🔍 Tools Used
 
@@ -28,15 +28,15 @@ It analyzes customer transactions to reveal insights into processed amounts, tra
 
 ## 🏢 Project Relevance
 
-Built as part of my role at Eefaa Marketing Agency, this dashboard demonstrates advanced data storytelling and business intelligence techniques for financial data.
+Built as part of my role at **Eefaa Marketing Agency**, this dashboard demonstrates advanced data storytelling and business intelligence techniques for financial data.
 
 ## 📁 File
 
-- `banking_dashboard_amjad.pbix` Main Power BI dashboard file.
+- `banking_dashboard_amjad.pbix`: Main Power BI dashboard file.
 
 ---
 
 ## 💼 Connect with Me
 
-- [LinkedIn](httpswww.linkedin.cominamjad-nazar)
-- [Portfolio](httpsamjadnazar.github.io)
+- [LinkedIn](https://www.linkedin.com/in/amjad-nazar)
+- [Portfolio](https://amjadnazar.github.io)
