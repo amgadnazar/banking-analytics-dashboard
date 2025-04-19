@@ -115,7 +115,7 @@ export default function Projects() {
 
   <div className="flex flex-wrap gap-4">
     <a
-      href="https://github.com/amgadnazar/amgadnazar.github.io"
+      href="https://github.com/amgadnazar/banking-analytics-dashboard"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block px-4 py-2 bg-gray-900 text-white font-semibold rounded hover:bg-gray-700 transition"
