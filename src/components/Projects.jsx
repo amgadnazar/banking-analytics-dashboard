@@ -54,6 +54,40 @@ export default function Projects() {
             🔗 View on GitHub
           </a>
         </motion.div>
+        {/* 📊 Project: Eefaa Marketing Tableau Dashboard */}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.6 }}
+  viewport={{ once: true }}
+  className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6"
+>
+  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+    📊 Eefaa Marketing Dashboard (Tableau)
+  </h3>
+  <p className="text-gray-700 dark:text-gray-300 mb-4">
+    An interactive Tableau dashboard analyzing Q1 2024 marketing performance at Eefaa Marketing Agency. Includes CPA, ROI, profit by region, and spend trends using Google Sheets + Tableau.
+  </p>
+  <div className="flex flex-wrap gap-4">
+    <a
+      href="https://public.tableau.com/views/EefaaMarketingDashboardQ12024/MarketingPerformanceDashboard"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-4 py-2 bg-purple-600 text-white font-semibold rounded hover:bg-purple-700 transition"
+    >
+      🌐 View on Tableau Public
+    </a>
+    <a
+      href="https://github.com/amgadnazar/marketing-dashboard-tableau"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-4 py-2 bg-gray-900 text-white font-semibold rounded hover:bg-gray-700 transition"
+    >
+      💻 View on GitHub
+    </a>
+  </div>
+</motion.div>
+
       </div>
       {/* 🔲 Grid wrapper ends here */}
     </section>
